@@ -1,0 +1,453 @@
+*{
+	box-sizing: border-box;
+}
+
+/* ESTILO PARA ANIMACION TIPO SLIDE IN */
+
+	@-webkit-keyframes encabezado{
+		0%{
+			margin-top:150%;
+		}
+		60%{
+			margin-top:-5%;
+		}
+		100%{
+			margin-top:0%;
+		}
+
+	}
+
+body{
+	 background-color: #02010a;
+	 font-family: "Dancing Script", cursive;
+	 animation: encabezado 2s;
+}
+
+/* MEDIA QUERIE PARA DISPOSITIVOS MOVILES */
+
+@media screen and (max-width: 900px){
+	
+	.encabezado{
+		background-color: #5b7989;
+		border-radius: 10px 10px 0 0;
+		-webkit-border-radius: 10px 10px 0 0;
+		-moz-border-radius: 10px 10px 0 0;
+		margin-bottom: 0px;
+		padding-bottom: 10px;
+		padding-top: 10px;
+		text-align: center;
+	}
+
+
+	h1{
+		color: white;
+		text-shadow: 2px 2px 2px #02010a;
+	}
+
+
+	.topnav ul{
+		list-style-type: none;
+		margin: 0px;
+		padding: 0px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+	}  
+
+/* ESTILOS PARA LOS ENLACES DEL NAV */
+
+	.topnav a:link{
+		text-decoration: none;
+		color: white;
+	}
+
+	.topnav a:hover{
+		color: blue;
+		text-decoration: underline;
+	}
+
+	.topnav a:visited{
+		color: purple;
+	}
+
+/* ESTILOS PARA LOS BLOQUES DE CONTENIDO CON IMAGENES */
+
+	.bloque_fotoprincipal{
+		background-color: #82c3a6;
+		text-align: center;
+		margin-top: 0px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+
+	.bloque_fotoprincipal img{
+		width: 100%;
+		box-shadow: 2px 2px 2px #02010a;
+	}
+
+	.bloque_fotopar{
+		background-color: #d5c75f;
+		border: 1px;
+		margin: 0px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+
+	.foto_paisaje{
+		width: 100%;
+		box-shadow: 2px 2px 2px #02010a;
+	}
+
+	.foto_paisaje:hover{
+	transform: rotate(10deg);
+	box-shadow: 2px 2px 2px #82c3a6;
+}
+
+	.foto_retrato{
+		width: 100%;
+		box-shadow: 2px 2px 2px #02010a;
+	}
+
+	.foto_retrato:hover{
+	transform: translate(20px, -5px);
+	box-shadow: 2px 2px 2px #82c3a6;
+}
+
+	.bloque_fotopar figcaption{
+		text-align: center;
+		padding-bottom: 10px;
+	}
+
+	.bloque_fotopar figcaption a:link{
+		text-decoration: none;
+		color: white;
+	}
+
+	.bloque_fotopar figcaption a:hover{
+		color: blue;
+		text-decoration: underline;
+	}
+
+	.bloque_fotopar figcaption a:visited{
+		color: purple;
+	}
+
+	.bloque_galeria{
+		background-color: #82c3a6;
+	}
+
+
+	.image{ 
+		width: 100%;
+		text-align: center;
+	 }
+
+	.foto_uno{
+		width: 80%;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		filter: blur(10px);
+	}
+
+	.foto_dos{
+		width: 80%;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		filter: grayscale(100%);
+		
+	}
+
+	.foto_tres{
+		width: 80%;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		filter: sepia(90%);
+		
+	}
+
+	.foto_cuatro{
+		width: 80%;
+		padding-bottom: 15px;
+		filter: grayscale(100%);
+		
+	}
+
+	.foto_cinco{
+		width: 80%;
+		padding-bottom: 15px;
+		
+	}
+
+	.foto_seis{
+		width: 80%;
+		padding-bottom: 15px;
+		filter: grayscale(100%);
+		
+
+	}
+
+/* ESTILOS PARA EL FOOTER */
+
+	.pie_pagina{
+		background-color: #c6d5c5;
+		border-radius: 0 0 10px 10px;
+		-moz-border-radius: 0 0 10px 10px;
+		-webkit-border-radius: 0 0 10px 10px;
+		display: flex;
+		flex-direction: column;
+		text-align: left;
+		padding-left: 30px;
+	}
+
+	.pie_pagina a:link{
+		text-decoration: none;
+		color: black;
+	}
+
+	.pie_pagina a:hover{
+		color: blue;
+		text-decoration: underline;
+	}
+
+	.pie_pagina a:visited{
+		color: purple;
+	}
+
+	.contacto ul{
+		list-style-type: none;
+		margin: 0px;
+		padding: 0px;
+
+	}
+
+	.redes_sociales ul{
+		list-style-type: none;
+		margin: 0px;
+		padding: 0px;
+	}
+
+
+}
+
+/* MEDIA QUERIE PARA DESKTOP */
+
+@media screen and (min-width: 900px){
+
+
+.contenido{
+	max-width: 900px;
+	margin: auto;
+}
+
+.encabezado{
+	background-color: #5b7989;
+	border-radius: 10px 10px 0 0;
+	-webkit-border-radius: 10px 10px 0 0;
+	-moz-border-radius: 10px 10px 0 0;
+	display: flex;
+	flex-wrap: row wrap;
+	align-items: baseline;
+}
+
+h1{
+	color: white;
+	text-shadow: 2px 2px 2px #02010a;
+	padding-left: 25px;
+}
+
+
+
+
+.topnav ul{
+	list-style-type: none;
+	margin: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-left: 300px;
+	display: flex;
+	flex-wrap: row wrap;  
+}
+
+.topnav ul li{
+	padding-left: 10px;
+}
+
+/* ESTILOS PARA LOS ENLACES EN EL NAV */
+
+.topnav a:link{
+	text-decoration: none;
+	color: white;
+}
+
+.topnav a:hover{
+	color: blue;
+	text-decoration: underline;
+}
+
+.topnav a:visited{
+	color: purple;
+}
+
+/*ESTILOS PARA LOS BLOQUES DE CONTENIDO CON IMAGENES */
+
+.bloque_fotoprincipal{
+		background-color: #82c3a6;
+		text-align: center;
+		margin-top: 0px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+}
+
+.bloque_fotoprincipal .foto_prin{
+		width: 100%;
+		box-shadow: 2px 2px 2px #02010a;
+}
+
+.bloque_galeria{
+	background-color: #82c3a6;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.image{ 
+	width: 33.3%;
+	text-align: center;
+ }
+
+.foto_uno{
+	width: 80%;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	filter: blur(10px);
+}
+
+.foto_dos{
+	width: 80%;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	filter: grayscale(100%);
+	
+}
+
+.foto_tres{
+	width: 80%;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	filter: sepia(90%);
+
+}
+
+.foto_cuatro{
+	width: 80%;
+	padding-bottom: 15px;
+	filter: grayscale(100%);
+	
+}
+
+.foto_cinco{
+	width: 80%;
+	padding-bottom: 15px;
+	
+}
+
+.foto_seis{
+	width: 80%;
+	padding-bottom: 15px;
+	filter: grayscale(100%);
+
+}
+
+.bloque_fotopar{
+		background-color: #d5c75f;
+		border: 1px;
+		margin: 0px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+}	
+
+.par_foto{
+	display: flex;
+	flex-direction: row;
+	text-align: center; 
+}
+
+.foto_paisaje{
+	width: 90%;
+	box-shadow: 2px 2px 2px #02010a;
+}
+
+.foto_paisaje:hover{
+	transform: rotate(10deg);
+	box-shadow: 2px 2px 2px #82c3a6;
+}
+
+.foto_retrato{
+	width: 90%;
+	box-shadow: 2px 2px 2px #02010a;
+}
+
+.foto_retrato:hover{
+	transform: translate(20px, -5px);
+	box-shadow: 2px 2px 2px #82c3a6;
+}
+
+/*ESTILOS PARA EL FOOTER */
+
+.pie_pagina{
+	background-color: #c6d5c5;
+	border-radius: 0 0 10px 10px;
+	-webkit-border-radius: 0 0 10px 10px;
+	-moz-border-radius: 0 0 10px 10px;
+	display: flex;
+	flex-direction: row;
+	text-align: left;
+	padding-bottom: 10px;	
+}
+
+.pie_pagina a:link{
+	text-decoration: none;
+	color: black;
+}
+
+.pie_pagina a:hover{
+	color: blue;
+	text-decoration: underline;
+}
+
+.pie_pagina a:visited{
+	color: purple;
+}
+
+.contacto ul{
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+.redes_sociales ul{
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+.contacto{
+	width: 25%;
+	padding-left: 25px;
+}
+
+.terminos{
+	width: 25%;
+}
+
+.contacto{
+	width: 25%;
+}
+
+.redes_sociales{
+	width: 25%;
+}
+
+.derechos{
+	width: 25%;
+}
+}
